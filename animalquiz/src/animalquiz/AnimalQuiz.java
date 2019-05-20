@@ -18,7 +18,9 @@ public class AnimalQuiz implements Xlet {
     public void initXlet(XletContext context) {
       HScene scene=HSceneFactory.getInstance().getDefaultHScene();
       
-      HStaticText hst=new HStaticText("Hello eee World",100,100,200,200);
+      Vraag v1 = new Vraag("wie?", "ik", "dd", "zd", "scc", 1);
+      
+      HStaticText hst=new HStaticText("Hel " + v1.getVraag() + "e World" ,100,100,200,200);
       hst.setBackgroundMode(HVisible.BACKGROUND_FILL);
       hst.setBackground(Color.BLUE);
       
