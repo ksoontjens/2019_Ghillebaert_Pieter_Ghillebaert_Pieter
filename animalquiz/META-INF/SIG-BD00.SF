@@ -1,14 +1,29 @@
 Signature-Version: 1.0
 Created-By: 1.6.0_16 (Sun Microsystems Inc.)
 BDJ-Signature-Version: 1.0
-SHA1-Digest-Manifest: lCEZAs/AsGJB48rjV7Hd3UnYSQA=
+SHA1-Digest-Manifest: +vLdqsM1cmQq6hojVDj6TGrmtUw=
+
+Name: hellotvxlet/HelloTVXlet.class
+SHA1-Digest: 5pFY0LSx6lAbgHPu0CVDnuL04I4=
+
+Name: hellotvxlet/HelloTVXlet$1.class
+SHA1-Digest: jL4rl+dtvgbj4VErj8qjkXfGCe4=
 
 Name: animalquiz/bluray.HelloTVXlet.perm
 SHA1-Digest: Je9hwSj8PKdgcCSFosFQK4AFuFU=
 
-Name: animalquiz/AnimalQuiz.class
-SHA1-Digest: 3lHVKEh3rR0aclYZSMRKu/9Zyy0=
+Name: hellotvxlet.zip
+SHA1-Digest: 1JeRLqdSGJ8US3h3Lw66S823BH0=
 
-Name: animalquiz/Vraag.class
-SHA1-Digest: pgk2bUP+amZacBw40WarJfrAACg=
+Name: animalquiz/AnimalQuiz.class
+SHA1-Digest: GVJwtpSaSu70yD94w2kZ1cV3Axk=
+
+Name: hellotvxlet/bluray.HelloTVXlet.perm
+SHA1-Digest: 84ZO/rYCyy0JStmaLbg1GDVEFhQ=
+
+Name: animalquiz/HelloTVXlet.class
+SHA1-Digest: eduBz5Q1wCb4P3RoWBkV7W+JZzw=
+
+Name: hellotvxlet/Vraag.class
+SHA1-Digest: vX+yijak4Uut34YvKCw/ma8BiUM=
 
