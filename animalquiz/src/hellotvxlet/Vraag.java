@@ -1,4 +1,4 @@
-package animalquiz;
+package hellotvxlet;
 
 public class Vraag {
 
