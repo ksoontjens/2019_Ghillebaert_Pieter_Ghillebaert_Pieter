@@ -40,15 +40,15 @@ public class HelloTVXlet implements Xlet, HActionListener {
         questions[7] = new Question("Hoe heet de gevaarlijkste haai?", "Stierhaai", "IJshaai", "Walvishaai", "Witte haai", "4");
         questions[8] = new Question("Hoeveel poten heeft een spin?", "2", "4", "6", "8", "4");
         questions[9] = new Question("Hoeveel magen heeft een koe?", "1", "2", "4", "8", "3");
-
         questionText = new HStaticText(questions[currentQuestion].getQuestion(), 20, 200, 680, 100); // tekst,x,y,w,h
 
+        questionText.setBackgroundMode(HVisible.BACKGROUND_FILL);
+        questionText.setBackground(new Color(0, 0, 150));
+        scene.add(questionText);
+
         Image bmap;
-
         bmap = scene.getToolkit().getImage("dieren.jpg");
-
         MediaTracker mtrack = new MediaTracker(scene);
-
         mtrack.addImage(bmap, 1);
         try {
             mtrack.waitForAll();
@@ -58,30 +58,22 @@ public class HelloTVXlet implements Xlet, HActionListener {
         scene.setBackgroundImage(bmap);
         scene.setRenderMode(HScene.IMAGE_CENTER);
 
-        questionText.setBackgroundMode(HVisible.BACKGROUND_FILL);
-        questionText.setBackground(new Color(0, 0, 150));
-        scene.add(questionText);
-
         button1 = new HTextButton(questions[0].getChoices()[0], 20, 330, 320, 50);
-
         button1.setBackgroundMode(HVisible.BACKGROUND_FILL);
         button1.setBackground(new Color(0, 0, 100));
         scene.add(button1);
 
         button2 = new HTextButton(questions[0].getChoices()[1], 20, 420, 320, 50);
-
         button2.setBackgroundMode(HVisible.BACKGROUND_FILL);
         button2.setBackground(new Color(0, 0, 100));
         scene.add(button2);
 
         button3 = new HTextButton(questions[0].getChoices()[2], 370, 330, 320, 50);
-
         button3.setBackgroundMode(HVisible.BACKGROUND_FILL);
         button3.setBackground(new Color(0, 0, 100));
         scene.add(button3);
 
         button4 = new HTextButton(questions[0].getChoices()[3], 370, 420, 320, 50);
-
         button4.setBackgroundMode(HVisible.BACKGROUND_FILL);
         button4.setBackground(new Color(0, 0, 100));
         scene.add(button4);
@@ -132,7 +124,6 @@ public class HelloTVXlet implements Xlet, HActionListener {
 
     public void nextQuestion() {
         currentQuestion++;
-        System.out.println("CURRENTT question: " + currentQuestion);
         questionText.setTextContent(questions[currentQuestion].getQuestion(), HVisible.NORMAL_STATE);
         button1.setTextContent(questions[currentQuestion].getChoices()[0], HVisible.NORMAL_STATE);
         button2.setTextContent(questions[currentQuestion].getChoices()[1], HVisible.NORMAL_STATE);
@@ -178,8 +169,7 @@ public class HelloTVXlet implements Xlet, HActionListener {
                         scene.repaint();
                     }
                 },
-                1850);
-
+                1500);
     }
 
     public void changeButtonColors(String correctAnswer, boolean reset) {
